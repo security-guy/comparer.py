@@ -47,7 +47,7 @@ try:
 	#removing single quote and creating a new line
 	with open('non_matching.txt', 'w+') as unique:
 		improved = str(unique_list).replace("'", "").replace(",", '\n').replace(" ", "")
-		unique.write(str(improved[1:-1]))
+		unique.write(improved[1:-1])
 		
 
 
