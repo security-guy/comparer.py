@@ -35,7 +35,7 @@ try:
 	with open('matching_items.txt', 'w+') as similars:
 		new = str(similar_list).replace("'", "").replace(",", '\n').replace(" ", "")
 		
-		print(new[1:-1])
+		
 		similars.write(new[1:-1])
 
 	for unique in list_two:
@@ -48,7 +48,7 @@ try:
 	with open('non_matching.txt', 'w+') as unique:
 		improved = str(unique_list).replace("'", "").replace(",", '\n').replace(" ", "")
 		unique.write(str(improved[1:-1]))
-		print(improved[1:-1])
+		
 
 
 except FileNotFoundError:
